@@ -15,8 +15,8 @@ while True:
 
     url = input('url:\t')     
     if url == '': break     
-    if not url.startswith('http'):         
-        url = 'http://'+ url     
+    if not url.startswith('https'):         
+        url = 'https://'+ url     
     try:         
         with requests.get(url) as response:             
             
